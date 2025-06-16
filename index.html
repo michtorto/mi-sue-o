@@ -6,19 +6,6 @@
   <title>Aioria Sport - Kickstarter</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelector(".slides");
-    const images = document.querySelectorAll(".slides img");
-    let index = 0;
-
-    setInterval(() => {
-        index = (index + 1) % images.length;
-        slides.style.transform = `translateX(-${index * 100}%)`;
-    }, 5000);  // Intervalo de 5 segundos
-});
-
-
-
 <body>
   <header class="hero">
     <div class="hero-content">
@@ -30,60 +17,56 @@ document.addEventListener("DOMContentLoaded", () => {
   </header>
 
   <!-- Carrusel de imágenes -->
-<section id="carrusel" class="carrusel">
-  <div class="slider">
-    <div class="slides">
-      <img src="diseno1.png" alt="Playera edición limitada" />
-      <img src="diseno2.png" alt="Gorra cultural" />
-      <img src="sudadea.jpg" alt="Sudadera con escudo" />
+  <section id="carrusel" class="carrusel">
+    <div class="slider">
+      <div class="slides">
+        <img src="diseno1.png" alt="Playera edición limitada" />
+        <img src="diseno2.png" alt="Gorra cultural" />
+        <img src="sudadera.jpg" alt="Sudadera con escudo" />
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title">Recompensas</h2>
+  <div class="rewards-container">
+    <div class="reward-card">
+      <img src="diseno1.png" alt="Camiseta edición limitada" />
+      <h3>$60 USD</h3>
+      <p>Recibe una <strong>camiseta de edición limitada</strong>, inspirada en nuestras raíces culturales. Una prenda que te hace sentir que vuelves a casa.</p>
+    </div>
+    <div class="reward-card">
+      <img src="ecompensa2.png" alt="Camiseta y gorra" />
+      <h3>$90 USD</h3>
+      <p>Camiseta de edición limitada <strong>+ gorra del mismo diseño</strong>. Cultura y estilo unidos en un solo paquete.</p>
+    </div>
+    <div class="reward-card">
+      <img src="ecompensa3.png" alt="Pack completo" />
+      <h3>$120 USD</h3>
+      <p>Camiseta de edición limitada + gorra <strong>+ otra camiseta</strong> con diseño complementario. Ideal para regalar o combinar.</p>
     </div>
   </div>
-</section>
 
+  <h2 class="section-title">Nuestra Historia</h2>
 
-<h2 class="section-title">Recompensas</h2>
-<div class="rewards-container">
-  <div class="reward-card">
-    <img src="diseno1.png" alt="Camiseta edición limitada" />
-    <h3>$60 USD</h3>
-    <p>Recibe una <strong>camiseta de edición limitada</strong>, inspirada en nuestras raíces culturales. Una prenda que te hace sentir que vuelves a casa.</p>
+  <!-- Video de presentación -->
+  <div class="video-container">
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" 
+      title="Video de Aioria Sport" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
-  <div class="reward-card">
-    <img src="" alt="ecompensa 2.png" />
-    <h3>$90 USD</h3>
-    <p>Camiseta de edición limitada <strong>+ gorra del mismo diseño</strong>. Cultura y estilo unidos en un solo paquete.</p>
+
+  <!-- Texto animado con imagen -->
+  <div class="historia-container">
+    <div class="historia-texto">
+      <p class="fade-in">Aioria Sport nace del deseo de vestir con orgullo lo que somos. En un mundo donde la moda muchas veces olvida el origen, nosotros decidimos crear prendas que <strong>rescatan nuestra identidad latina</strong> y la transforman en estilo.</p>
+      <p class="fade-in">Esta marca no solo ofrece ropa. Ofrece una conexión: con tus raíces, con tus valores, con tu historia. Queremos que cada camiseta, cada gorra, cada sudadera que uses de Aioria Sport <strong>te haga sentir que vuelves a casa</strong>.</p>
+      <p class="fade-in">Con esta campaña buscamos financiar nuestra <strong>primera producción</strong> y demostrar que la moda también puede ser una forma de empoderamiento cultural. Apóyanos y sé parte de una comunidad que se viste con propósito.</p>
+    </div>
+    <div class="historia-imagen">
+      <img src="mexico-logo.png" alt="Escudo cultural Aioria" />
+    </div>
   </div>
-  <div class="reward-card">
-    <img src="ecompensa 3.png" alt="Pack completo" />
-    <h3>$120 USD</h3>
-    <p>Camiseta de edición limitada + gorra <strong>+ otra camiseta</strong> con diseño complementario. Ideal para regalar o combinar.</p>
-  </div>
-</div>
-
-<h2 class="section-title">Nuestra Historia</h2>
-
-<!-- Video de presentación -->
-<div class="video-container">
-  <iframe width="100%" height="400" src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" 
-    title="Video de Aioria Sport" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-</div>
-
-<!-- Texto animado con imagen -->
-<div class="historia-container">
-  <div class="historia-texto">
-    <p class="fade-in">Aioria Sport nace del deseo de vestir con orgullo lo que somos. En un mundo donde la moda muchas veces olvida el origen, nosotros decidimos crear prendas que <strong>rescatan nuestra identidad latina</strong> y la transforman en estilo.</p>
-    <p class="fade-in">Esta marca no solo ofrece ropa. Ofrece una conexión: con tus raíces, con tus valores, con tu historia. Queremos que cada camiseta, cada gorra, cada sudadera que uses de Aioria Sport <strong>te haga sentir que vuelves a casa</strong>.</p>
-    <p class="fade-in">Con esta campaña buscamos financiar nuestra <strong>primera producción</strong> y demostrar que la moda también puede ser una forma de empoderamiento cultural. Apóyanos y sé parte de una comunidad que se viste con propósito.</p>
-  </div>
-  <div class="historia-imagen">
-    <img src="mexico-logo.png" alt="Escudo cultural Aioria" />
-  </div>
-</div>
-
-
-
 
   <!-- Preguntas frecuentes -->
   <section id="faq">
@@ -93,5 +76,18 @@ document.addEventListener("DOMContentLoaded", () => {
   <footer>
     <p>&copy; 2025 Aioria Sport. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelector(".slides");
+      const images = document.querySelectorAll(".slides img");
+      let index = 0;
+
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      }, 5000);  // Intervalo de 5 segundos
+    });
+  </script>
 </body>
 </html>
