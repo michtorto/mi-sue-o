@@ -48,6 +48,7 @@ footer {
   background-color: #333;
   color: white;
 }
+
 .carrusel {
   width: 100%;
   overflow: hidden;
@@ -61,19 +62,13 @@ footer {
 
 .slides {
   display: flex;
-  width: 300%;
-  animation: slide 12s infinite;
+  transition: transform 0.5s ease-in-out;
 }
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.slides {
-  display: flex;
-  width: 300%;
-  overflow: visible; /* ✅ importante */
-  transition: transform 0.5s ease-in-out;
+.slides img {
+  width: 100%;  /* Asegúrate de que las imágenes ocupen todo el ancho */
+  height: auto;  /* Mantiene la proporción de la imagen */
+  display: block;  /* Elimina el espacio en blanco debajo de la imagen */
 }
 
 .section-title {
@@ -104,23 +99,13 @@ footer {
 }
 
 .reward-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+  width: 100%;  /* Mantiene el ancho completo del contenedor */
+  height: auto;  /* Mantiene la proporción de la imagen */
+  object-fit: cover;  /* Asegura que la imagen cubra el contenedor sin deformarse */
   border-radius: 12px;
   margin-bottom: 15px;
 }
 
-.reward-card h3 {
-  margin: 10px 0;
-  color: #ff7f50;
-  font-size: 1.5rem;
-}
-
-.reward-card p {
-  font-size: 1rem;
-  color: #555;
-}
 .historia-container {
   display: flex;
   flex-wrap: wrap;
@@ -151,8 +136,6 @@ footer {
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
-
 
 /* Video responsivo */
 .video-container {
@@ -189,6 +172,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 .progreso-container {
   max-width: 700px;
   margin: 40px auto;
@@ -211,32 +195,6 @@ footer {
   width: 0;
   border-radius: 30px 0 0 30px;
   transition: width 1.5s ease-in-out;
-}
-.slides img {
-    width: 80%;  /* Ajusta el porcentaje según lo necesites */
-    height: auto;  /* Mantiene la proporción de la imagen */
-    display: block;  /* Elimina el espacio en blanco debajo de la imagen */
-    margin: 0 auto;  /* Centra la imagen */
-}
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;  /* Hace que el cambio sea más suave */
-}
-.carousel {
-    overflow: hidden;  /* Oculta el desbordamiento */
-    width: 100%;  /* Asegúrate de que el carrusel ocupe el ancho completo */
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;  /* Transición suave */
-}
-
-.slides img {
-    width: 80%;  /* Ajusta el tamaño de las imágenes */
-    height: auto;  /* Mantiene la proporción */
-    display: block;  /* Elimina el espacio en blanco */
-    margin: 0 auto;  /* Centra la imagen */
 }
 
 .progreso-texto {
