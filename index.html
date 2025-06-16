@@ -6,18 +6,17 @@
   <title>Aioria Sport - Kickstarter</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelector(".slides");
     const images = document.querySelectorAll(".slides img");
     let index = 0;
 
     setInterval(() => {
-      index = (index + 1) % images.length;
-      slides.style.transform = `translateX(-${index * 100}%)`;
-    }, 3000);
-  });
-</script>
+        index = (index + 1) % images.length;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }, 5000);  // Intervalo de 5 segundos
+});
+
 
 
 <body>
@@ -50,12 +49,12 @@
     <p>Recibe una <strong>camiseta de edición limitada</strong>, inspirada en nuestras raíces culturales. Una prenda que te hace sentir que vuelves a casa.</p>
   </div>
   <div class="reward-card">
-    <img src="ecompensa2.png" alt="Camiseta y gorra" />
+    <img src="" alt="Camisecompensa 2.pngeta y gorra" />
     <h3>$90 USD</h3>
     <p>Camiseta de edición limitada <strong>+ gorra del mismo diseño</strong>. Cultura y estilo unidos en un solo paquete.</p>
   </div>
   <div class="reward-card">
-    <img src="ecompensa3.png" alt="Pack completo" />
+    <img src="ecompensa 3.png" alt="Pack completo" />
     <h3>$120 USD</h3>
     <p>Camiseta de edición limitada + gorra <strong>+ otra camiseta</strong> con diseño complementario. Ideal para regalar o combinar.</p>
   </div>
