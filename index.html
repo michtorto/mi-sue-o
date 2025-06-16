@@ -6,27 +6,6 @@
   <title>Aioria Sport - Kickstarter</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const fill = document.querySelector(".progress-fill");
-    // Cambia aquí el porcentaje deseado
-    const progresoPorcentaje = 45;
-    fill.style.width = progresoPorcentaje + "%";
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelector(".slides");
-    const images = document.querySelectorAll(".slides img");
-    let index = 0;
-
-    setInterval(() => {
-      index++;
-      if (index >= images.length) index = 0;
-      slides.style.transform = `translateX(-${index * (images[0].clientWidth + 20)}px)`;
-    }, 3000); // cada 3 segundos
-  });
-</script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelector(".slides");
@@ -39,6 +18,7 @@
     }, 3000);
   });
 </script>
+
 
 <body>
   <header class="hero">
