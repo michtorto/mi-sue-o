@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aioria Sport - Kickstarter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fill = document.querySelector(".progress-fill");
+    // Cambia aquí el porcentaje deseado
+    const progresoPorcentaje = 45;
+    fill.style.width = progresoPorcentaje + "%";
+  });
+</script>
+
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="logo-aioria.png" alt="Logo Aioria Sport" class="logo" />
+      <h1>Aioria Sport</h1>
+      <p class="tagline">Moda que lleva nuestra historia puesta</p>
+      <a href="#recompensas" class="btn-donar">Apóyanos en Kickstarter</a>
+    </div>
+  </header>
+
+  <!-- Carrusel de imágenes -->
+<section id="carrusel" class="carrusel">
+  <div class="slider">
+    <div class="slides">
+      <img src="assets/playera-1.jpg" alt="Playera edición limitada" />
+      <img src="assets/gorra-1.jpg" alt="Gorra cultural" />
+      <img src="assets/sudadera-1.jpg" alt="Sudadera con escudo" />
+    </div>
+  </div>
+</section>
+
+
+<h2 class="section-title">Recompensas</h2>
+<div class="rewards-container">
+  <!-- Recompensa 1 -->
+  <div class="reward-card">
+    <img src="assets/playera-1.jpg" alt="Camiseta edición limitada" />
+    <h3>$60 USD</h3>
+    <p>Recibe una <strong>camiseta de edición limitada</strong>, inspirada en nuestras raíces culturales. Una prenda que te hace sentir que vuelves a casa.</p>
+  </div>
+
+  <!-- Recompensa 2 -->
+  <div class="reward-card">
+    <img src="assets/gorra-1.jpg" alt="Camiseta y gorra" />
+    <h3>$90 USD</h3>
+    <p>Camiseta de edición limitada <strong>+ gorra del mismo diseño</strong>. Cultura y estilo unidos en un solo paquete.</p>
+  </div>
+
+  <!-- Recompensa 3 -->
+  <div class="reward-card">
+    <img src="assets/sudadera-1.jpg" alt="Pack completo" />
+    <h3>$120 USD</h3>
+    <p>Camiseta de edición limitada + gorra <strong>+ otra camiseta</strong> con diseño complementario. Ideal para regalar o combinar.</p>
+  </div>
+</div>
+<section id="progreso" class="progreso-container">
+  <h2 class="section-title">Meta de recaudación</h2>
+  <div class="progress-bar">
+    <div class="progress-fill" style="width: 45%;"></div>
+  </div>
+  <p class="progreso-texto">$4,500 USD recaudados de $10,000 USD</p>
+</section>
+
+
+<h2 class="section-title">Nuestra Historia</h2>
+
+<!-- Video de presentación -->
+<div class="video-container">
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" 
+    title="Video de Aioria Sport" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
+<!-- Texto animado con imagen -->
+<div class="historia-container">
+  <div class="historia-texto">
+    <p class="fade-in">Aioria Sport nace del deseo de vestir con orgullo lo que somos. En un mundo donde la moda muchas veces olvida el origen, nosotros decidimos crear prendas que <strong>rescatan nuestra identidad latina</strong> y la transforman en estilo.</p>
+    <p class="fade-in">Esta marca no solo ofrece ropa. Ofrece una conexión: con tus raíces, con tus valores, con tu historia. Queremos que cada camiseta, cada gorra, cada sudadera que uses de Aioria Sport <strong>te haga sentir que vuelves a casa</strong>.</p>
+    <p class="fade-in">Con esta campaña buscamos financiar nuestra <strong>primera producción</strong> y demostrar que la moda también puede ser una forma de empoderamiento cultural. Apóyanos y sé parte de una comunidad que se viste con propósito.</p>
+  </div>
+  <div class="historia-imagen">
+    <img src="assets/escudo-aioria.jpg" alt="Escudo cultural Aioria" />
+  </div>
+</div>
+
+
+
+
+  <!-- Preguntas frecuentes -->
+  <section id="faq">
+    <!-- Se llenará más adelante -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aioria Sport. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
