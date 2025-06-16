@@ -69,6 +69,12 @@ footer {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
+.slides {
+  display: flex;
+  width: 300%;
+  overflow: visible; /* ✅ importante */
+  transition: transform 0.5s ease-in-out;
+}
 
 .section-title {
   text-align: center;
