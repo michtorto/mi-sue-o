@@ -212,6 +212,32 @@ footer {
   border-radius: 30px 0 0 30px;
   transition: width 1.5s ease-in-out;
 }
+.slides img {
+    width: 80%;  /* Ajusta el porcentaje según lo necesites */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    display: block;  /* Elimina el espacio en blanco debajo de la imagen */
+    margin: 0 auto;  /* Centra la imagen */
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;  /* Hace que el cambio sea más suave */
+}
+.carousel {
+    overflow: hidden;  /* Oculta el desbordamiento */
+    width: 100%;  /* Asegúrate de que el carrusel ocupe el ancho completo */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;  /* Transición suave */
+}
+
+.slides img {
+    width: 80%;  /* Ajusta el tamaño de las imágenes */
+    height: auto;  /* Mantiene la proporción */
+    display: block;  /* Elimina el espacio en blanco */
+    margin: 0 auto;  /* Centra la imagen */
+}
 
 .progreso-texto {
   font-size: 1.1rem;
